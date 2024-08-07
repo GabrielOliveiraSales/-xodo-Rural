@@ -1,0 +1,236 @@
+@import url(section4.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root {
+    --fonte_principal: "Poppins";
+    --cor_de_fundo: #171717;
+    --cor_titulo_section1: #D5BC20;
+    --cor_de_fundo_textos: #1E1E1E;
+
+}
+
+body {
+    background-color: var(--cor_de_fundo);
+    font-family: var(--fonte_principal);
+}
+
+.cabecalho {
+    padding: 0;
+    text-transform: uppercase;
+    width: 100%;
+    height: 500px;
+    background-image: url(img/imagem__header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+
+.titulo__principal {
+    color: #000;
+    padding-top: 300px;
+    padding-left: 50px;
+}
+
+.titulo__section1 {
+    color: var(--cor_titulo_section1);
+    background-color: var(--cor_de_fundo_textos);
+    border-radius: 35px;
+    padding: 1em;
+    margin: 2em 0 2em 2em;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.titulo__section01 {
+    color: var(--cor_titulo_section1);
+    background-color: var(--cor_de_fundo_textos);
+    border-radius: 35px;
+    padding: 1em;
+    margin: 2em 0 2em 500px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.txt__section1 {
+    color: #fff;
+    width: 700px;
+    margin-left: 1em;
+    background-color: var(--cor_de_fundo_textos);
+    padding: 3em;
+    border-radius: 35px;
+    font-weight: 700;
+}
+
+.txt__section01 {
+    color: #fff;
+    width: 700px;
+    margin-left: 450px;
+    background-color: var(--cor_de_fundo_textos);
+    padding: 3em;
+    border-radius: 35px;
+    font-weight: 700;
+}
+
+/*Section 2*/
+.box__de__cards {
+    width: 95%;
+    margin: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    cursor: pointer;
+    border-radius: 35px;
+    width: 25%;
+    height: 500px;
+    border: 5px solid var(--cor_de_fundo_textos);
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover .card__conteudo {
+    right: 0;
+}
+
+.card__conteudo {
+    backdrop-filter: blur(5px);
+    padding: 1em;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    transition: 2s;
+    color: #fff;
+}
+
+.h3__card {
+    color: #000;
+    margin: 3em;
+}
+
+/*Section 3*/
+.section3 {
+    text-align: center;
+}
+
+.txt__section3 {
+    margin-left: 24em;
+    margin-bottom: 5em;
+    color: #fff;
+    width: 700px;
+    background-color: var(--cor_de_fundo_textos);
+    padding: 3em;
+    border-radius: 35px;
+    font-weight: 700;
+}
+
+/*Section 4*/
+.box__animacao {
+    margin: 1em;
+    display: flex;
+}
+
+.fundo__animacao {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    transition: 2s;
+    margin: 1em;
+    cursor: pointer;
+}
+
+.fundo__animacao:hover .conteudo__animacao {
+    background-color: #9d9d9d;
+    bottom: 0;
+}
+
+.fundo__animacao:hover {
+    height: 550px;
+}
+
+.imagem__animacao {
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+}
+
+.conteudo__animacao {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: -100%;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    transition: 2s;
+    left: 0;
+}
+
+.titulo__animacao {
+    margin: 1em;
+    text-transform: uppercase;
+}
+
+.txt__animacao {
+    color: #000;
+    font-weight: 700;
+    margin-top: 5em;
+}
+
+/*Rodapé*/
+.rodape {
+    background-color: #9d9d9d;
+    margin-top: 1em;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto__rodape {
+    margin: 1px;
+    color: var(--cor_de_fundo_textos);
+}
+
+.perfil {
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 5px;
+    align-items: center;
+    height: 50px;
+    margin-top: 100px;
+    margin-right: 50px;
+}
+
+.perfil:hover {
+    background-color: #e8e8e8;
+}
+
+.github {
+    width: 35px;
+    display: inline-block;
+    padding-top: 2px;
+}
+
+.txt__meu__perfil {
+    display: inline-block;
+    margin: 1em;
+    text-decoration: none;
+    color: var(--cor_de_fundo_textos);
+    font-weight: 500;
+}
